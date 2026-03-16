@@ -34,3 +34,15 @@ project-folder
 ## Application
 Frontend: http://EC2_PUBLIC_IP:3000  
 Backend API: http://EC2_PUBLIC_IP:5000/api/status
+
+
+## Screenshots
+
+### Live Application
+![App Screenshot](screenshots/app.png)
+
+### Jenkins Pipeline
+![Jenkins Screenshot](screenshots/jenkins.png)
+
+### Docker Containers
+![Docker Screenshot](screenshots/docker.png)
