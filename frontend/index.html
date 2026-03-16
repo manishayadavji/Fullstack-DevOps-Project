@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>DevOps Live Project</h1>
+        <div id="status" class="status-box">Connecting to Backend...</div>
+    </div>
+    <script>
+        fetch('http://YOUR_EC2_PUBLIC_IP:5000/api/status')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('status').innerHTML = data.message;
+                document.getElementById('status').style.background = "#d4edda";
+            }).catch(err => {
+                document.getElementById('status').innerHTML = "Backend Not Reachable!";
+                document.getElementById('status').style.background = "#f8d7da";
+            });
+    </script>
+</body>
+</html>
